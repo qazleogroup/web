@@ -1,144 +1,204 @@
 <!doctype html>
-<html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<meta http-equiv="content-language" content="ru">
-		<title>Поиск</title>
-		<script src="search.js"></script>
-		<link
-			href="search.css"
-			type="text/css"
-			rel="stylesheet"
-			charset="utf-8"
-		>
-		<style id="filter">
-		</style>
-	</head>
-	<body>
-		<table class="search">
-			<tr>
-				<th>Стиль:</th>
-				<td>
-					<select id="style">
-						<option value="">любой</option>
-						<option value="neoklas" id="neoklas">неоклассицизм</option>
-						<option value="postmodern" id="postmodern">постмодерн</option>
-						<option value="psevdomodern" id="psevdomodern">псевдомодерн</option>
-						<option value="neogot" id="neogot">неоготика</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<th>Материал стен:</th>
-				<td>
-					<select id="wall_material">
-						<option value="">любой</option>
-						<option value="kirpich" id="kirpich">кирпич</option>
-						<option value="gazobeton" id="gazobeton">газобетон</option>
-						<option value="karkas" id="karkas">деревянный каркас</option>
-						<option value="derevo" id="derevo">дерево</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<th>Этажность:</th>
-				<td>
-					<select id="floors">
-						<option value="">любой</option>
-						<option value="fl1" id="fl1">1</option>
-						<option value="fl2" id="fl2">2</option>
-						<option value="fl3" id="fl3">3</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<input id="search" type="button" value="поиск" />
-				</td>
-			</tr>
-		</table>
-<!-- дома -->
+<html lang="en">
 
-		<div class="home whiteframe neoklas kirpich fl2">
-			<a class="url" href="http://kirpich.example.com/#rust">
-					<img class="image" src="http://kirpich.example.com/thmb/rust/rust_vid-1.jpg" alt=""/>
-			</a>
-			<div class="name">
-				<a class="url" href="http://kirpich.example.com/#rust">
-					«Руст»
-				</a>
-			</div>
-			<div class="style">неоклассицизм</div>
-			<div class="wall_material">керамический кирпич, утепленный минеральной ватой</div>
-			<div class="square">165.5</div>
-			<div class="living_space">86</div>
-			<div class="floors">2</div>
-		</div>
-		
-		<div class="home whiteframe postmodern gazobeton fl2">
-			<a class="url" href="http://kirpich.example.com/#shater">
-					<img class="image" src="http://kirpich.example.com/thmb/shater/shater_enter.jpg"  alt=""/>
-			</a>
-			<div class="name">
-				<a class="url" href="http://kirpich.example.com/#shater">
-					«Шатер»
-				</a>
-			</div>
-			<div class="style">постмодерн</div>
-			<div class="wall_material">газобетонные блоки</div>
-			<div class="square">262</div>
-			<div class="living_space">148.5</div>
-			<div class="floors">2</div>
-		</div>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>NIPI mobile</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/nlogo.svg" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
 
-		<div class="home whiteframe psevdomodern karkas fl1">
-			<a class="url" href="http://karkas.example.com/#papirus">
-					<img class="image" src="http://karkas.example.com/thmb/papirus/Papirus%20Vid-1.jpg"  alt="" title="«Папирус»"/>
-			</a>
-			<div class="name">
-				<a class="url" href="http://karkas.example.com/#papirus">
-					«Папирус»
-				</a>
-			</div>
-			<div class="style">псевдомодерн</div>
-			<div class="wall_material">утепленный деревянный каркас</div>
-			<div class="square">142.3</div>
-			<div class="living_space">77.9</div>
-			<div class="floors">1</div>
-		</div>
-		
-		<div class="home whiteframe neogot derevo fl3">
-			<a class="url" href="http://derevo.example.com/#legenda">
-					<img class="image" src="http://derevo.example.com/thmb/orehovo/orehovo.jpg"  alt="" title="«Легенда»"/>
-			</a>
-			<div class="name">
-				<a class="url" href="http://derevo.example.com/#legenda">
-					«Легенда»
-				</a>
-			</div>
-			<div class="style">неоготика</div>
-			<div class="wall_material">дерево</div>
-			<div class="square">436.7</div>
-			<div class="living_space">166.2</div>
-			<div class="floors">3</div>
-		</div>
+<body>
 
-		<!--
-		<div class="home whiteframe">
-			<a class="url" href="">
-				<img class="image" src="" alt="" title=""/>
-			</a>
-			<div class="name">
-				<a class="url" href="">
-					
-				</a>
-			</div>
-			<div class="style"></div>
-			<div class="wall_material"></div>
-			<div class="living_space"></div>
-			<div class="square"></div>
-			<div class="floors"></div>
-		</div>
-		-->
-	</body>
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary scrolled">
+        <div class="left">
+            <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
+                <ion-icon name="menu-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">
+            Discover
+        </div>
+        <div class="right">
+            <a href="javascript:;" class="headerButton toggle-searchbox">
+                <ion-icon name="search-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- Search Component -->
+    <div id="search" class="appHeader">
+        <form class="search-form">
+            <div class="form-group searchbox">
+                <input type="text" class="form-control" placeholder="Поиск...">
+                <i class="input-icon">
+                    <ion-icon name="search-outline"></ion-icon>
+                </i>
+                <a href="javascript:;" class="ml-1 close toggle-searchbox">
+                    <ion-icon name="close-circle"></ion-icon>
+                </a>
+            </div>
+        </form>
+    </div>
+    <!-- * Search Component -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="header-large-title">
+            <h1 class="title">NIPI mobile</h1>
+            <h4 class="subtitle"></h4>
+        </div>
+
+        
+
+
+    </div>
+    <!-- * App Capsule -->
+
+
+   
+
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+
+                    <!-- profile box -->
+                    <div class="profileBox">
+                        <div class="image-wrapper">
+                            <img src="assets/img/nlogo.svg" alt="image" class="imaged rounded">
+                        </div>
+                        <div class="in">
+                            <strong>NIPI mobile</strong>
+                            <div class="text-muted">
+                                
+                                Тестовый
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
+                            <ion-icon name="close"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * profile box -->
+
+                    <ul class="listview flush transparent no-line image-listview mt-2">
+                        <li>
+                            <a href="index.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Карта
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-components.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="cube-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Настройка
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Меню</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Сотрудники</div>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="moon-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Темный режим</div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input dark-mode-switch"
+                                            id="darkmodesidebar">
+                                        <label class="custom-control-label" for="darkmodesidebar"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                   
+                   
+
+                </div>
+
+                <!-- sidebar buttons -->
+                <div class="appFooter">
+            <div>АО НИПИнефтегаз 2021</div>
+            версия 0.1
+
+        </div>
+                <!-- * sidebar buttons -->
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+
+
+    <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+
+    <script>
+        setTimeout(() => {
+            notification('notification-welcome', 5000);
+        }, 2000);
+    </script>
+
+</body>
+
 </html>
